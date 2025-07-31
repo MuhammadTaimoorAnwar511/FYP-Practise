@@ -1,7 +1,7 @@
 # Multi-stage Dockerfile for react frontend
 
 # Builder stage
-FROM node:18-alpine AS builder
+FROM node:22-alpine AS builder
 WORKDIR /app
 
 # Copy manifest and lock files
@@ -17,5 +17,5 @@ FROM nginx:alpine AS production
 # Copy static assets for serving
 COPY --from=builder /app/build /usr/share/nginx/html
 
-EXPOSE 3000
+EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
