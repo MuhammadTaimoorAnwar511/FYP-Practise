@@ -2,7 +2,7 @@ TO run code on UBuntu:
 
 STEP 1: Start Trading Bot
 open vs code terminal
-cd AWS
+cd BOT
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -10,8 +10,10 @@ python bot.py
 ===
 STEP 2: Start Sentiment API
 open another vs code terminal
-cd AWS
+cd Tweets
+python3 -m venv venv
 source venv/bin/activate
+pip install -r requirements.txt
 python weighted_sentiment_api.py
 ===
 STEP 3: Start Backend Server
