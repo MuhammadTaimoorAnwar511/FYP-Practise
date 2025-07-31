@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 /**
@@ -80,7 +80,7 @@ const CurrencyConverters = () => {
     });
 
     // Mock exchange rates (in a real app, these would come from an API)
-    const [exchangeRates, setExchangeRates] = useState({
+    const [exchangeRates] = useState({
         USD: 1,
         EUR: 0.92,
         GBP: 0.79,

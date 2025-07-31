@@ -1,7 +1,6 @@
-import React from "react";
 import Navbar2 from '../Components/Footer&Navbar/Navbar2'; 
 import TradingViewWidget from "../Components/Charts/TradingViewWidget";
-import Footer from "../Components/Footer&Navbar/Footer";
+
 
 const Chart = () => {
   return (

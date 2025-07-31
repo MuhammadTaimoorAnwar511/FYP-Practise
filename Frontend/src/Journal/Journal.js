@@ -69,59 +69,12 @@ function DashboardPage() {
 
   const [activeTab, setActiveTab] = useState('active');
   const [journal, setJournal] = useState(null);
-  const [user, setUser] = useState(null);
+  const [setUser] = useState(null);
   const [openTrades, setOpenTrades] = useState([]);
   const [closedTrades, setClosedTrades] = useState([]);
   const [currentBalanceData, setCurrentBalanceData] = useState(null);
 
   const chartRef = useRef(null);
-
-  const chartData = {
-    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
-    datasets: [
-      {
-        label: 'Portfolio Growth',
-        data: [0, 5, 10, 6, 15, 20, 18],
-        fill: true,
-        borderColor: '#60a5fa',
-        pointBackgroundColor: '#60a5fa',
-        tension: 0.4,
-      },
-    ],
-  };
-
-  const chartOptions = {
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins: {
-      legend: {
-        labels: { color: '#D1D5DB' },
-      },
-      title: {
-        display: true,
-        text: 'Performance Over Time',
-        color: '#D1D5DB',
-        font: { size: 16 },
-      },
-      tooltip: {
-        titleColor: '#FFFFFF',
-        bodyColor: '#FFFFFF',
-        backgroundColor: '#1F2937',
-        borderColor: '#374151',
-        borderWidth: 1,
-      },
-    },
-    scales: {
-      x: {
-        ticks: { color: '#D1D5DB' },
-        grid: { color: '#374151' },
-      },
-      y: {
-        ticks: { color: '#D1D5DB' },
-        grid: { color: '#374151' },
-      },
-    },
-  };
 
   // Update chart gradient when activeTab changes
   useEffect(() => {
