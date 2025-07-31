@@ -1,5 +1,3 @@
-import React from "react";
-
 const exchanges = [
   { name: "Binance", logo: "https://cryptologos.cc/logos/binance-coin-bnb-logo.svg?v=024", link: "https://www.binance.com" },
   { name: "OKX", logo: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Logo-OKX.png", link: "https://www.okx.com" },

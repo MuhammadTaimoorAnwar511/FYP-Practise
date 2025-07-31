@@ -1,5 +1,4 @@
 // File: src/Components/Dashboard/StatCard.jsx
-import React from 'react';
 import { motion } from 'framer-motion';
 
 const StatCard = ({ title, value, colorClass, size = 'default' }) => {

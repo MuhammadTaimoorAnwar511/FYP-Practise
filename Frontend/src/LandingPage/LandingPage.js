@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Navbar from "../Components/LandingPage/Landing_Navbar";
 import Hero from "../Components/LandingPage/Hero";
 import Features from "../Components/LandingPage/Features";

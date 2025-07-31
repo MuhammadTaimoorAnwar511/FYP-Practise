@@ -1,7 +1,4 @@
 
-// File: src/Components/Common/ErrorAlert.jsx
-import React from 'react';
-
 const ErrorAlert = ({ message, error }) => {
   return (
     <div className="max-w-7xl mx-auto px-6 py-8">

@@ -1,5 +1,3 @@
-import React from "react";
-
 const Features = () => {
   const features = [
     { title: "Technical Analysis", description: "Our bot uses LSTM models for advanced technical analysis on multiple timeframes.", icon: "📊" },

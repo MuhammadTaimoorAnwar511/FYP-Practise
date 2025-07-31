@@ -1,5 +1,3 @@
-import React from "react";
-
 const coinLogos = [
   { name: "BTC", logo: "https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=024" },
   { name: "ETH", logo: "https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=024" },

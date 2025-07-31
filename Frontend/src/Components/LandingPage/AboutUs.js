@@ -1,5 +1,3 @@
-import React from "react";
-
 const AboutUs = () => {
   return (
     <section id="about" className="py-20 bg-gray-900 text-white">

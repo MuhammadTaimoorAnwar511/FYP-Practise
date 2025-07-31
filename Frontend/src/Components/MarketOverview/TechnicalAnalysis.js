@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 const TechnicalAnalysis = ({ symbol = "BINANCE:BTCUSD", interval = "1m", width = "125", height = "150" }) => {
     const widgetRef = useRef(null);

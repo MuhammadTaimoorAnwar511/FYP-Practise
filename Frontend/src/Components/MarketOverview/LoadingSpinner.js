@@ -1,5 +1,3 @@
-import React from 'react';
-
 /**
  * LoadingSpinner - A reusable loading indicator component with different sizes
  * 
