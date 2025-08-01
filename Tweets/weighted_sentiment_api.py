@@ -547,6 +547,10 @@ def get_top_tweets_by_retweets():
 
 
 # ---------------- RUN THE APP ----------------
-port = int(os.environ.get("SENT_PORT"))  # Default to 5001 if PORT not set
-app.run(port=port, debug=True)
+@app.route('/')
+def health():
+    return jsonify({'message': 'Sentiment analysis API is running'}), 200
+
+port = int(os.environ.get("SENT_PORT")) 
+app.run(host='0.0.0.0',port=port, debug=True)
 
