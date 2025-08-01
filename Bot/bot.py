@@ -20,12 +20,11 @@ load_dotenv()
 PORT = int(os.getenv("PORT"))
 MONGO_URI = os.getenv("MONGO_URI")
 DB_NAME = os.getenv("DB_NAME")
-# Retrieve backend host and port; provide defaults if they are not set
 backend_uri = os.getenv("BACKEND_URI")
-backend_port = os.getenv("BACKEND_PORT")
-
-# Point to your sentiment endpoint (adjust if needed)
-SENTIMENT_API_URL = "http://localhost:5001/get_sentiment_iterations"
+backend_port = int(os.getenv("BACKEND_PORT"))
+sentiment_uri = os.getenv("SENTIMENT_URI")
+sentiment_port = int(os.getenv("SENTIMENT_PORT"))
+SENTIMENT_API_URL = f"http://{sentiment_uri}:{sentiment_port}/get_sentiment_iterations"
 
 # ----- LOGGER SETUP -----
 logging.basicConfig(level=logging.INFO)

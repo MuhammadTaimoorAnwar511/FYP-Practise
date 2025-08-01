@@ -24,7 +24,7 @@ COPY --from=backend-builder /usr/local/lib/python3.11/site-packages/ /usr/local/
 # Copy the application code from the backend-builder stage
 COPY --from=backend-builder /app /app
 
-# Expose port 5000 for the Flask application
+# container port on which backend is running
 EXPOSE 8080
 
 # Define the default command to run the application

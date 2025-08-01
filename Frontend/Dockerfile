@@ -16,6 +16,6 @@ FROM nginx:alpine AS production
 
 # Copy static assets for serving
 COPY --from=builder /app/build /usr/share/nginx/html
-
+# container port on which frontend is running
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
